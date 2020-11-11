@@ -1,0 +1,43 @@
+{
+  "name": "ta_frameworks_basics_js",
+  "version": "1.0.0",
+  "description": "test-automation framework in JS",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "protractor ./test/config/protractor-config.js",
+    "remove-logs": "node ./test/utilities/cleanUp/logs-cleaner.js",
+    "postinstall": "webdriver-manager update",
+    "pretest": "npm run remove-logs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Irina-N23/TA_Frameworks_Basics_JS.git"
+  },
+  "keywords": [
+    "framework",
+    "protractor",
+    "testing",
+    "ui-automation",
+    "js"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Irina-N23/TA_Frameworks_Basics_JS/issues"
+  },
+  "homepage": "https://github.com/Irina-N23/TA_Frameworks_Basics_JS#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^7.13.0",
+    "eslint-config-google": "^0.14.0",
+    "fs-extra": "^9.0.1",
+    "mocha": "^8.2.1",
+    "mochawesome": "^6.2.1",
+    "protractor": "^7.0.0",
+    "winston": "^3.3.3",
+    "yargs": "^16.1.0"
+  }
+}
