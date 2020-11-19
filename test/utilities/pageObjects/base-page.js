@@ -5,12 +5,12 @@ const logger = require("../../config/logger-config");
 
 class Page {
     constructor() {
-        this.TIMEOUT = 40000;
+        this.timeout = 40 * 1000;
     }
 
     openPage(url) {
         logger.info(`Opening page '${url}'.`);
-        return browser.get(url, this.TIMEOUT);
+        return browser.get(url, this.timeout);
     }
 
     async getCurrentUrl() {

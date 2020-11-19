@@ -19,7 +19,7 @@ class HomePage extends BasePage {
         return super.openPage(this.HOME_URL);
     }
 
-    async getTitleOfPage() {
+    getTitleOfPage() {
         return super.getTitleOfPage();
     }
 }

@@ -16,7 +16,7 @@ class HomePage extends Page {
         return super.openPage(this.URL);
     }
 
-    async getTitleOfPage() {
+    getTitleOfPage() {
         return super.getTitleOfPage();
     }
 }

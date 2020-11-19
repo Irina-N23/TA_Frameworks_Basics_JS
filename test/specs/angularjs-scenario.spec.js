@@ -32,13 +32,12 @@ describe("An AngularJS website scenario", () => {
     });
 
 
-    it("should find an article about \"bind\"", async () => {
-        await tutorialPage.searchField.inputText("bind");
-        await tutorialPage.wait(3000);
-        await tutorialPage.searchField.element.sendKeys(Key.ENTER);
+    it("should find an article \"ngBindHtml\"", async () => {
+        await tutorialPage.searchField.inputText("ngBindHtml");
+        await tutorialPage.ngBindHtmlLink.clickOn();
         const pageTitle = await searchResultsPage.foundPageTitle
                                                           .getTextFromElement();
-        expect(pageTitle.toLowerCase()).to.include("bind");
+        expect(pageTitle).to.include("ngBindHtml");
     });
 
 

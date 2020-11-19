@@ -14,8 +14,14 @@ exports.config = {
 
     specs: "../specs/*.spec.js",
 
+    suites: {
+        angularjs: "../specs/angularjs-scenario.spec.js",
+        evernote: "../specs/evernote-scenario.spec.js",
+        all: "../specs/*.spec.js"
+    },
+
     capabilities: {
-        "browserName": yargs.browser || "chrome",
+        browserName: yargs.browser || "chrome",
         shardTestFiles: yargs.instances > 1,
         maxInstances: yargs.instances || 1
     },
