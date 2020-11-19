@@ -1,7 +1,6 @@
 "use strict";
 
 const {expect} = require("chai");
-const {Key} = require("protractor");
 
 const HomePage = require("../utilities/pageObjects/angularJs/home-page");
 const SearchResultPage = require("../utilities/pageObjects/angularJs/"
